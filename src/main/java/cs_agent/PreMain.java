@@ -21,7 +21,7 @@ import java.util.*;
 
 public class PreMain
 {
-    public static String VERSION = "cs_agent 0.0.8 20221008"; //定义版本号
+    public static String VERSION = "cs_agent 0.0.9 20240708"; //定义版本号
     public static String config_file = "cs_agent.ini"; //定义配置文件名称
     public static String package_name = "cs_agent"; //包名,下面有修改后的代码使用
 
@@ -46,6 +46,7 @@ public class PreMain
     //从配置文件读取原始bytes[]密钥
     public static byte[] string2Bytes(String string){
         //String string = "94, -104, 25, 74, 1, -58, -76, -113, -91, -126, -90, -87, -4, -69, -110, -42";
+        String string = "-1, 12, -6, 65, 7, -47, 91, 48, 17, 61, 29, 43, -99, -23, 21, 109";
         String[] list = string.split(",");
         byte[] bytes = new byte[list.length];
         for(int i = 0; i < list.length; ++i) {
